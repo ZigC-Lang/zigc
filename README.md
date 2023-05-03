@@ -15,7 +15,8 @@ In result, ZigC is easier than C++/Rust, faster than Go/Java, safer than C/C++, 
 * 'unreacheable'
 * @ builtin functions
 * test blocks
-* ignored variable '_'
+* ignored variable `_`
+  
 * return value from if/for/switch block
 * array .len and boundary check
 * wrap arround operaters `+%, -%, *%, /%`
