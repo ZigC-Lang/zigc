@@ -7,7 +7,7 @@ In result, ZigC is easier than C++/Rust, faster than Go/Java, safer than C/C++, 
   
 ## ZigC added and following features:
   
-* intuitive error handling with composite value or error type, 'int|error'
+* intuitive error handling with composite value or error type -- ex. `int!error`
 * compile time processing and generics
 * self reference within struct
 * arbitrary bit integer, i7 or i15
@@ -18,8 +18,8 @@ In result, ZigC is easier than C++/Rust, faster than Go/Java, safer than C/C++, 
 * ignored variable '_'
 * return value from if/for/switch block
 * array .len and boundary check
-* wrap arround operaters +%, -%, *%, /*
-* optional variables 'int?' for possible null or undefined values
+* wrap arround operaters `+%, -%, *%, /%`
+* optional variables `int?` for possible null or undefined values
 * concurrency by suspend/resume/nosuspend, async and await, anyframe
 * SIMD vector operations
   
@@ -29,6 +29,5 @@ In result, ZigC is easier than C++/Rust, faster than Go/Java, safer than C/C++, 
 * no unnecessary loops (while/do while)
 * no 'unsigned' keyword
 * no increment/decrement '++', '--'
-* no function declation, only definition
 * no class
 
