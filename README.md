@@ -1,7 +1,7 @@
 
 # What is ZigC language?
   
-ZigC is a C language with a lot of modern concepts introduced by Zig language, getting rid of seemingly unnecessary features and some illogical syntax from C/C++, and removing peculiarities from Zig syntax. 
+ZigC is a C language with a lot of modern concepts introduced by Zig language, getting rid of seemingly unnecessary features and some illogical syntax from C/C++. 
   
 In result, ZigC is easier than C++/Rust, faster than Go/Java, safer than C/C++, familiar than Rust/Zig, smaller than Go/Rust/C, and more machine friendly than C/C++/Asm/Rust/Go.
   
