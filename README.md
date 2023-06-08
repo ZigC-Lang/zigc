@@ -1,34 +1,49 @@
+README.md
 
-# What is ZigC language?
+# What is ZigC language anyway?
   
-ZigC is a C language with a lot of modern concepts introduced by Zig language, getting rid of seemingly unnecessary features and some illogical syntax from C/C++. 
+ZigC is a C-like language with a lot of modern concepts introduced in Zig language, and getting rid of a lot of seemingly unnecessary features from C/C++ and embarrassing peculiarities from Zig syntax. 
   
-In result, ZigC is easier than C++/Rust, faster than Go/Java, safer than C/C++, familiar than Rust/Zig, smaller than Go/Rust/C, and more machine friendly than C/C++/Rust/Go.
+In result, ZigC is easier than C++/Rust, faster than Go/Java, safer than C/C++, familiar than Rust/Zig, smaller than Rust/C++, and more machine friendly than C/C++/Rust/Go.
   
 ## ZigC added and following features:
   
-* intuitive error handling with composite value or error type -- ex. `int!error`
-* compile time processing and generics
-* self reference within struct
-* arbitrary bit integer, i7 or i15
-* ?? 'undefined'
-* 'unreacheable'
-* @ builtin functions
-* test blocks
-* ignored variable `_`
+* Error handling with errorable types. Mandatory error handling. Error as return value.
+* Types as values. Strong type checking, type reflections. 
+* Allowing developers to run explicit compile time evaluation.
+* Generics by compile time type constructors.
+* Arbitrary bit width integers, i1, i7, i15, upto i65535.
+* Safety by array boundary check, separation of indexable pointers and normal pointers, explicit nullable types, sentinel terminated string.
+* General allocator to check double free, use-after-free, dangling pointer and memory leak.
+* Built-in test blocks and build framework.
+* Concurrency by async/await, suspend/resume.
+* Easy SIMD vector computation.
+* Seamless embrace of C and libc replacement.
+* Universal compiler accommodation of C and C++.
+* Extensive crosscompilation.
+
   
-* return value from if/for/switch block
-* array .len and boundary check
-* wrap arround operaters `+%, -%, *%, /%`
-* optional variables `int?` for possible null or undefined values
-* concurrency by suspend/resume/nosuspend, async and await, anyframe
-* SIMD vector operations
-  
-## ZigC removed and following things:
+## ZigC removed and following things from C/C++:
   
 * no header files, no macros
 * no unnecessary loops (while/do while)
 * no 'unsigned' keyword
 * no increment/decrement '++', '--'
-* no class
+* no class, no inheritance
+* no operator overloading
+  
+## ZigC corrected Zig syntax as follows:
+  
+* Back to C like syntax from Pascal-like variable, function declaration.
+* JSON like struct iniatialization. Array bracket [] for array initialization.
+* Simple for loops, removing crapy while/for syntax.
+* Semicolon in struct/union, instead of comma.
+* Back to switch/case/default.
+* Non-null, non-error 'quotation, instead of |capture|.
+* Error sets merge A|B, not A||B. Array concat + and mult *, not ++ and **. anyframe(return_type) not anyframe->return_type.
+* Public and static.
+* Non-public main.
+* ! operator, not try ...
+* catch (null), instead of 'orelse'.
 
+ 
