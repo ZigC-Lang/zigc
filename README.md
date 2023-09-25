@@ -1,5 +1,5 @@
-README.md
-
+Disclaimer: This project is in its earliest stage, and we don't have any concrete implementation yet. Everything can be changed wildly and even can be abandonned.
+  
 # What is ZigC language anyway?
   
 ZigC is a C-like language with a lot of modern concepts introduced in Zig language, and getting rid of a lot of seemingly unnecessary features from C/C++ and embarrassing peculiarities from Zig syntax. 
